@@ -783,7 +783,6 @@ body._lock {
   justify-content: center;
   min-height: 100vh;
   height: 100%;
-  padding-top: 100px;
 }
 
 .section-main__bg {
@@ -1002,6 +1001,12 @@ body._lock {
 .about__logo img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.about__logo picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .privilege {
@@ -3935,7 +3940,7 @@ body._lock {
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 15px;
-    padding: 0;
+    padding: 0 10px;
   }
 
   .list-main__icon {
