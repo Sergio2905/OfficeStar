@@ -4,7 +4,7 @@
 <head>
     <title>OfficeStar</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221116201326">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221119144038">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -19,15 +19,17 @@
             </a>
 
             <div class="header__menu menu">
-                <div class="menu__icon">
-                    <span></span>
-                </div>
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="centers.html" class="menu__link">Бизнес-центры</a>
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list">
+                                <button class="menu__back" type="button">
+                                    <svg>
+                                        <use xlink: href="img/icons/icons.svg#back"></use>
+                                    </svg>
+                                </button>
                                 <li class="menu__sub-item">
                                     <a href="#" class="menu__sub-link">
                                         <picture><source srcset="img/icons/center-icon.webp" type="image/webp"><img src="img/icons/center-icon.png" alt="Icon"></picture>
@@ -97,6 +99,10 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="menu__icon">
+                <span></span>
             </div>
 
         </div>
@@ -171,7 +177,7 @@
                                 от <span>10 000</span> грн. /
                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                             </div>
-                            <a href="#" class="office__btn btn_yellow">Забронировать</a>
+                            <a href="#book" class="office__btn btn_yellow popup-link">Забронировать</a>
                         </div>
                     </div>
                 </div>
@@ -266,8 +272,110 @@
         </div>
     </div>
 </footer>
+        <div class="popup" id="order">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="close-popup" type="button">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </button>
+            <h2 class="popup__title title">Заказать просмотр офиса</h2>
+            <div class="popup__name">Бизнес-центр «Gulliver», 17 этаж
+            </div>
+            <div class="popup__info">
+                <div class="popup__address">г. Киев, Спортивная пл., 1a</div>
+                <div class="popup__district">Печерский район</div>
+            </div>
+            <form action="#" class="popup__form form-popup">
+                <div class="form-popup__block">
+                    <div class="form-popup__image">
+                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Image"></picture>
+                    </div>
+                    <div class="form-popup__fields">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Ваш телефон">
+                        <input type="text" placeholder="Ваш email">
+                    </div>
+                </div>
+                <textarea placeholder="Укажите Ваши пожелания"></textarea>
+                <a href="#done" class="form-popup__btn btn_blue popup-link" type="submit">Заказать</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="book">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="close-popup" type="button">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </button>
+            <h2 class="popup__title title">Забронировать конференц-зал</h2>
+            <div class="popup__name">Бизнес-центр «Gulliver», 17 этаж
+            </div>
+            <div class="popup__info">
+                <div class="popup__address">г. Киев, Спортивная пл., 1a</div>
+                <div class="popup__district">Печерский район</div>
+            </div>
+            <form action="#" class="popup__form form-popup">
+                <div class="form-popup__block">
+                    <div class="form-popup__image">
+                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Image"></picture>
+                    </div>
+                    <div class="form-popup__fields">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Ваш телефон">
+                        <input type="text" placeholder="Ваш email">
+                        <input type="text" placeholder="Дата">
+                        <input type="text" placeholder="К-во человек (макс:23)">
+                    </div>
+                </div>
+                <textarea placeholder="Укажите Ваши пожелания"></textarea>
+                <a href="#done" class="form-popup__btn btn_blue popup-link" type="submit">Забронировать</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="done">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="close-popup" type="button">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </button>
+            <h2 class="popup__title title">Спасибо</h2>
+            <div class="popup__intro intro">
+                Вы заказали просмотр офиса в Бизнес-центре <span>«Gulliver»</span>
+            </div>
+            <ul class="popup__details">
+                <li class="popup__item">
+                    <span>Адрес бизнес-центра:</span> г. Киев, Спортивная пл., 1a
+                </li>
+                <li class="popup__item">
+                    <span>Район:</span> Печерский
+                </li>
+                <li class="popup__item">
+                    <span>Этаж:</span> 17
+                </li>
+                <li class="popup__item">
+                    <span>Номер офиса:</span> 408
+                </li>
+            </ul>
+            <div class="popup__message">
+                Если у Вас возникнут вопросы, наши менеджеры с радостью Вам помогут
+                тел.: <a href="tel:+380956862121" class="popup__phone">+38 095 686 21 21</a>
+            </div>
+            <button type="button" class="popup__btn btn_blue close-popup">Хорошо</button>
+        </div>
+    </div>
+</div>
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20221116201326"></script>
+    <script src="js/app.min.js?_v=20221119144038"></script>
 </body>
 
 </html>
