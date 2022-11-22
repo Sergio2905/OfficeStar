@@ -784,6 +784,7 @@ body._lock {
   position: relative;
   width: 100vw;
   min-height: 100vh;
+  min-height: var(--app-height);
   height: 100%;
   margin-bottom: 50px;
 }
