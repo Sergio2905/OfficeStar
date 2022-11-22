@@ -85,6 +85,10 @@ h6 {
   font-weight: 400;
 }
 
+:root {
+  --app-height: 100%;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -2915,6 +2919,7 @@ body._lock {
   position: relative;
   width: 100vw;
   height: 100vh;
+  height: --app-height;
 }
 
 .main-center__bg {
