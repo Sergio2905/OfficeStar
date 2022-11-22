@@ -2919,7 +2919,7 @@ body._lock {
   position: relative;
   width: 100vw;
   height: 100vh;
-  height: --app-height;
+  height: var(--app-height);
 }
 
 .main-center__bg {
