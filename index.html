@@ -2,922 +2,1163 @@
 <html>
 
 <head>
-    <title>OfficeStar</title>
+    <title>Clusster</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221119144038">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230105155850">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
-    <div class="header__container container">
-        <div class="header__body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__body">
+                    <a href="main.html" class="header__logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </a>
+                    <a href="main.html" class="header__logo_mob">
+                        <img src="img/logo-mob.svg" alt="Logo">
+                    </a>
+                    <div class="header__btns">
+                        <a href="#" class="header__btn header__btn_authorisation btn_green">Увійти</a>
+                        <a href="#" class="header__btn header__btn_registration btn_green">Зареєструватися</a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-            <a href="./" class="header__logo">
-                <picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="Logo"></picture>
+        <div class="main">
+            <div class="main__container container">
+                <div class="main__body">
+                    <div class="main__left">
+                        <div class="main__offer offer">
+                            <div class="offer__pretitle">ЛАСКАВО ПРОСИМО В</div>
+                            <h1 class="offer__title">CLUSSTER</h1>
+                            <div class="offer__desc">Ця соціальна мережа для тих,
+                                хто хоче спілкуватися і заробляти!</div>
+                            <a href="#authorisation" class="offer__btn offer__btn_auth">Увійти</a>
+                        </div>
+                        <div class="registration" id="registration">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Реєстрація</h2>
+                                    <div class="registration__subtitle">Через соціальні мережі</div>
+                                    <div class="registration__socials">
+                                        <a href="#" class="registration__social">
+                                            <img src="img/google.svg" alt="Google">
+                                            Google
+                                        </a>
+                                        <a href="#" class="registration__social">
+                                            <img src="img/facebook.svg" alt="facebook">
+                                            Facebook
+                                        </a>
+                                    </div>
+                                    <div class="registration__subtitle">або</div>
+                                    <form class="registration__form form-registration" action="#">
+                                        <ul class="form-registration__list">
+                                            <li class="form-registration__item">
+                                                <!--<div class="form-registration__title">Прізвище та ім’я</div>-->
+                                                <div class="form-registration__input">
+                                                    <input type="text" placeholder="Прізвище та ім’я">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <!--<div class="form-registration__title">Номер телефону</div>-->
+                                                <div class="form-registration__input">
+                                                    <input type="text" id="reg-phone" value="+380"
+                                                        placeholder="Номер телефону">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <!--<div class="form-registration__title">Адреса ел.пошти</div>-->
+                                                <div class="form-registration__input">
+                                                    <input type="text" placeholder="Адреса ел.пошти">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <!--<div class="form-registration__title">Пароль</div>-->
+                                                <div class="form-registration__input settings__input">
+                                                    <input type="password" value="password" placeholder="Пароль">
+                                                    <button type="button" class="settings__hide">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <!--<div class="form-registration__title">Повторіть пароль</div>-->
+                                                <div class="form-registration__input settings__input">
+                                                    <input type="text" value="password" placeholder="Повторіть пароль">
+                                                    <button type="button" class="settings__hide active">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="form-registration__warning form-registration__warning_red">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Невірний пароль</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="registration__note">
+                                            Якщо ваша ел. адрес вже була зареєстрована, будь ласка виберіть
+                                            “Авторизація”, так як повторна реєстрація неможлива
+                                        </div>
+                                        <a href="#" class="registration__btn btn_green">Зареєструватися</a>
+                                        <div class="registration__note_last">
+                                            Натиснувши зареєструватися, ви погоджуєтесь <br>
+                                            з <a href="#" class="registration__link">Умовами сайту</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration" id="authorisation">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Авторизація</h2>
+                                    <form class="registration__form form-registration" action="#">
+                                        <ul class="form-registration__list">
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__input">
+                                                    <input type="text" placeholder="Адреса ел.пошти">
+                                                </div>
+                                                <div class="form-registration__warning">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Заповніть форму</span>
+                                                </div>
+                                            </li>
+                                            <li class="form-registration__item">
+                                                <div class="form-registration__input settings__input">
+                                                    <input type="password" value="password" placeholder="Пароль">
+                                                    <button type="button" class="settings__hide">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#eye2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="form-registration__warning form-registration__warning_red">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>Невірний пароль</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="registration__checkbox checkbox">
+                                            Запам’ятати мене
+                                            <input type="checkbox">
+                                        </div>
+                                        <a href="main.html" class="registration__btn btn_green">Увійти</a>
+                                        <div class="registration__bottom">
+                                            <a href="#recover" class="registration__forgot">Забули пароль?</a>
+                                            <div class="registration__create">
+                                                <spam>Немає акаунту?</spam>
+                                                <a href="#registration" class="registration__reg">Зареєструйтесь!</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration" id="recover">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Відновлення паролю</h2>
+                                    <form class="registration__form form-registration" action="#">
+                                        <ul class="form-registration__list">
+                                            <li class="form-registration__item">
+                                                <!--<div class="form-registration__title">Адреса ел.пошти</div>-->
+                                                <div class="form-registration__input">
+                                                    <input type="text" placeholder="Адреса ел.пошти">
+                                                </div>
+                                                <div
+                                                    class="form-registration__warning form-registration__warning_error">
+                                                    <svg>
+                                                        <use xlink: href="img/icons/icons.svg#attention"></use>
+                                                    </svg>
+                                                    <span>За цією ел. поштою немає аккаунту, будь ласка,
+                                                        перевірте.</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="registration__note">
+                                            Вкажіть вашу адресу ел. пошти аккаунту. На цю адресу буде відправленне
+                                            посилання для відновлення паролю.
+                                        </div>
+                                        <a href="#restore"
+                                            class="registration__btn registration__restore btn_green">Відправити</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration" id="restore">
+                            <div class="registration__body">
+                                <div class="registration__content">
+                                    <h2 class="registration__title">Скидання паролю</h2>
+                                    <form class="registration__form form-registration" action="#">
+                                        <div class="registration__note">
+                                            Ми надіслали вам листа з кодом підтвердження з шести цифр. Введіть їх нижче,
+                                            щоб
+                                            скинути пароль.
+                                        </div>
+                                        <div class="form-registration__recover">
+                                            <div class="form-registration__left">
+                                                <div class="form-registration__note">
+                                                    Ми надіслали вам код
+                                                </div>
+                                                <div class="form-registration__email">
+                                                    userclusster@gmail.com
+                                                </div>
+                                            </div>
+                                            <div class="form-registration__right">
+                                                <div class="form-registration__input">
+                                                    <input type="text" placeholder="Введіть код ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-registration__error">
+                                            <svg>
+                                                <use xlink: href="img/icons/icons.svg#attention"></use>
+                                            </svg>
+                                            <span>Невірний код, спробуйте ще раз.</span>
+                                        </div>
+                                        <a href="#" class="registration__btn registration__reset btn_green">Скинути
+                                            пароль</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        <div class="main__image">
+                            <picture><source srcset="img/main-image.webp" type="image/webp"><img src="img/main-image.png" alt="Image"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- page__container -->
+        </div> <!-- page -->
+
+        <div class="popup" id="likes">
+    <div class="popup__body">
+        <div class="popup__content">
+
+            <div class="messages__body">
+                <div class="messages__header">
+                    <h2 class="messages__title">Сподобалось читачам</h2>
+                    <div class="messages__close close-popup">
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="messages__items" data-simplebar>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+                    <div class="messages__item">
+                        <div class="messages__avatar">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <div class="messages__details">
+                            <div class="messages__user">Джигурда Джигурдинович</div>
+                            <div class="messages__member">15 хвилин тому</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="messages__footer">
+                    <a href="#" class="messages__all">
+                        Переглянути усі результати
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="post-delete">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
             </a>
-
-            <div class="header__menu menu">
-                <nav class="menu__body">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="centers.html" class="menu__link">Бизнес-центры</a>
-                            <span class="menu__arrow"></span>
-                            <ul class="menu__sub-list">
-                                <button class="menu__back" type="button">
-                                    <svg>
-                                        <use xlink: href="img/icons/icons.svg#back"></use>
-                                    </svg>
-                                </button>
-                                <li class="menu__sub-item">
-                                    <a href="#" class="menu__sub-link">
-                                        <picture><source srcset="img/icons/center-icon.webp" type="image/webp"><img src="img/icons/center-icon.png" alt="Icon"></picture>
-                                        IQ Business Center
-                                    </a>
-                                </li>
-                                <li class="menu__sub-item">
-                                    <a href="#" class="menu__sub-link">
-                                        <picture><source srcset="img/icons/center-icon.webp" type="image/webp"><img src="img/icons/center-icon.png" alt="Icon"></picture>
-                                        Horizon Tower
-                                    </a>
-                                </li>
-                                <li class="menu__sub-item">
-                                    <a href="#" class="menu__sub-link">
-                                        <picture><source srcset="img/icons/center-icon.webp" type="image/webp"><img src="img/icons/center-icon.png" alt="Icon"></picture>
-                                        Podil
-                                    </a>
-                                </li>
-                                <li class="menu__sub-item">
-                                    <a href="center.html" class="menu__sub-link">
-                                        <picture><source srcset="img/icons/center-icon.webp" type="image/webp"><img src="img/icons/center-icon.png" alt="Icon"></picture>
-                                        Gulliver
-                                    </a>
-                                </li>
-                                <li class="menu__sub-item">
-                                    <a href="#" class="menu__sub-link">
-                                        <picture><source srcset="img/icons/center-icon.webp" type="image/webp"><img src="img/icons/center-icon.png" alt="Icon"></picture>
-                                        Horizon Park
-                                    </a>
-                                </li>
-                                <li class="menu__sub-item">
-                                    <a href="#" class="menu__sub-link menu__sub-link_soon">
-                                        <span>скоро</span>
-                                        SilverBreeze
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu__item"><a href="offices.html" class="menu__link">Офисы</a></li>
-                        <li class="menu__item"><a href="coworking.html" class="menu__link">Коворкинг</a></li>
-                        <li class="menu__item"><a href="conference.html" class="menu__link">Конференц-залы</a></li>
-                        <li class="menu__item"><a href="online.html" class="menu__link">Виртуальный офис</a></li>
-                        <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
-                    </ul>
-                </nav>
+            <h2 class="popup-confirm__title">Видалення публікації</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити публікацію?
             </div>
-
-            <div class="header__phones phones">
-                <div class="phones__icon">
-                    <picture><source srcset="img/icons/phone.webp" type="image/webp"><img src="img/icons/phone.png" alt="Phone"></picture>
-                </div>
-                <button class="phones__btn" type="button">
-                    <picture><source srcset="img/icons/arrow-down.webp" type="image/webp"><img src="img/icons/arrow-down.png" alt=""></picture>
-                </button>
-                <div class="phones__body">
-                    <ul class="phones__list">
-                        <li class="phones__item">
-                            <a href="tel:+380952068521" class="phones__link">+38 095 20 685 21</a>
-                            <ul class="phones__sublist">
-                                <li class="phones__subitem">
-                                    <a href="tel:+380672068521" class="phones__link">+38 067 20 685 21</a>
-                                </li>
-                                <li class="phones__subitem">
-                                    <a href="tel:+380632068521" class="phones__link">+38 063 20 685 21</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#post-deleted" class="popup-confirm__btn_green popup-link">Видалити</a>
             </div>
-
-            <div class="menu__icon">
-                <span></span>
-            </div>
-
-        </div>
-    </div>
-</header>
-
-		<div class="page">
-			<div class="page__main main">
-				<section class="main__section section-main">
-					<div class="section-main__bg">
-						<picture><source srcset="img/main/main_bg.webp" type="image/webp"><img src="img/main/main_bg.jpg" alt="Background"></picture>
-					</div>
-					<div class="section-main__container container">
-						<div class="section-main__body">
-							<h1 class="section-main__title">Комфортный офис для каждого</h1>
-							<ul class="section-main__list list-main">
-								<li class="list-main__item">
-									<div class="list-main__icon">
-										<picture><source srcset="img/main/paper-plane.webp" type="image/webp"><img src="img/main/paper-plane.png" alt="Icon"></picture>
-									</div>
-									<div class="list-main__wrapper">
-										<div class="list-main__title">Быстрый старт</div>
-										<div class="list-main__desc">Отсутствие первоначальных инвестиций.</div>
-									</div>
-								</li>
-								<li class="list-main__item">
-									<div class="list-main__icon">
-										<picture><source srcset="img/main/paper-plane.webp" type="image/webp"><img src="img/main/paper-plane.png" alt="Icon"></picture>
-									</div>
-									<div class="list-main__wrapper">
-										<div class="list-main__title">Быстрый старт</div>
-										<div class="list-main__desc">Отсутствие первоначальных инвестиций.</div>
-									</div>
-								</li>
-								<li class="list-main__item">
-									<div class="list-main__icon">
-										<picture><source srcset="img/main/paper-plane.webp" type="image/webp"><img src="img/main/paper-plane.png" alt="Icon"></picture>
-									</div>
-									<div class="list-main__wrapper">
-										<div class="list-main__title">Быстрый старт</div>
-										<div class="list-main__desc">Отсутствие первоначальных инвестиций.</div>
-									</div>
-								</li>
-							</ul>
-							<div class="section-main__search search-main">
-								<div class="search-main__body">
-									<div class="search-main__column">
-										<h3 class="search-main__title">Выберите бизнес-центр</h3>
-										<div class="search-main__select select-box">
-											<div class="options-container">
-												<div class="option">
-													<input type="radio" class="radio" id="gulliver" name="Center">
-													<label for="for gulliver">Gulliver</label>
-												</div>
-												<div class="option">
-													<input type="radio" class="radio" id="podil" name="Center">
-													<label for="for podil">Podil</label>
-												</div>
-												<div class="option">
-													<input type="radio" class="radio" id="iq" name="Center">
-													<label for="for iq">IQ</label>
-												</div>
-											</div>
-											<div class="selected">
-												Gulliver
-											</div>
-										</div>
-									</div>
-									<div class="search-main__column">
-										<h3 class="search-main__title">Выберите тип помещения</h3>
-										<div class="search-main__select select-box">
-											<div class="options-container">
-												<div class="option">
-													<input type="radio" class="radio" id="gulliver" name="Center">
-													<label for="for gulliver">Gulliver</label>
-												</div>
-												<div class="option">
-													<input type="radio" class="radio" id="podil" name="Center">
-													<label for="for podil">Podil</label>
-												</div>
-												<div class="option">
-													<input type="radio" class="radio" id="iq" name="Center">
-													<label for="for iq">IQ</label>
-												</div>
-											</div>
-											<div class="selected">
-												Gulliver
-											</div>
-										</div>
-									</div>
-									<div class="search-main__column">
-										<button class="search-main__btn" type="button">
-											<picture><source srcset="img/icons/search.webp" type="image/webp"><img src="img/icons/search.png" alt="Search"></picture>
-											<span>Найти</span>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="section-main__double-arrow">
-								<picture><source srcset="img/icons/double-angle-pointing-to-right.webp" type="image/webp"><img src="img/icons/double-angle-pointing-to-right.png" alt=""></picture>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="main__about about">
-					<div class="about__container container">
-						<h2 class="about__title">О нас</h2>
-						<div class="about__body">
-							<div class="about__info">
-								<div class="about__desc">
-									<span class="bold">Многофункциональный комплекс (МФК) Gulliver</span> — единственный
-									объект на рынке
-									торгово-офисной недвижимости Киева, имеющий настолько удачное местоположение. Он
-									расположен одновременно в историческом и деловом центре столицы, на пересечении
-									основных
-									транспортных артерий, в непосредственной близости от ключевых станций метро и
-									остановок
-									общественного транспорта. Бизнес-центр Gulliver полностью соответствует всем
-									международным критериям, предназначенным для офисных центров класса «А», а это и:
-									качественная. Он расположен одновременно в историческом и деловом центре столицы, на
-									пересечении основных транспортных артерий, в непосредственной близости от ключевых
-									станций метро и остановок общественного транспорта. Бизнес-центр Gulliver полностью
-									соответствует всем международным критериям, предназначенным для офисных центров
-									класса
-									«А», а это и: качественная.
-								</div>
-							</div>
-							<div class="about__logo">
-								<picture><source srcset="img/Gulliver/logo.webp" type="image/webp"><img src="img/Gulliver/logo.png" alt="Logo"></picture>
-							</div>
-						</div>
-						<button class="about__btn" type="button">
-							<picture><source srcset="img/icons/read-more.webp" type="image/webp"><img src="img/icons/read-more.png" alt="Icon"></picture>
-							<span>Читать подробнее</span>
-						</button>
-					</div>
-				</section>
-				<section class="main__privilege privilege">
-					<div class="privilege__container container">
-						<div class="privilege__body">
-							<h2 class="privilege__title">Ваши привилегии</h2>
-							<div class="privilege__intro">
-								Вы получите больше чем обычный офис! Это пространство, обеспечивает ваше удобство и
-								комфорт в работе. Ощущение отдыха, а не тяжелых трудовых будней.
-							</div>
-							<div class="privilege__items">
-								<div class="privilege__item item-privilege">
-									<div class="item-privilege__logo">
-										<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
-									</div>
-									<h3 class="item-privilege__title">
-										Всегда больше Всегда лучше!
-									</h3>
-									<div class="item-privilege__desc">
-										Вы получите комфортный, оборудованный под ключ офис с европейским дизайном. А
-										также уникальную систему сервиса, максимально настраиваемую на ваши потребности.
-									</div>
-								</div>
-								<div class="privilege__item item-privilege">
-									<div class="item-privilege__logo">
-										<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
-									</div>
-									<h3 class="item-privilege__title">
-										Связи решают все!
-									</h3>
-									<div class="item-privilege__desc">
-										Теперь у вас идеальные соседи. Окружите себя успешными бизнесменами и даже
-										целыми компаниями. Заводите новые бизнес-знакомства, становитесь еще успешнее.
-									</div>
-								</div>
-								<div class="privilege__item item-privilege">
-									<div class="item-privilege__logo">
-										<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
-									</div>
-									<h3 class="item-privilege__title">
-										Комфортные и успешные переговоры! Наше предложение превзойдет все ожидания!
-									</h3>
-									<div class="item-privilege__desc">
-										Ваши клиенты восхитятся и оценят комфорт и уникальную атмосферу, а превосходный
-										уровень сервиса, подчеркнет вашу любовь к ним.
-									</div>
-								</div>
-								<div class="privilege__item item-privilege">
-									<div class="item-privilege__logo">
-										<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
-									</div>
-									<h3 class="item-privilege__title">
-										Вдохновляйтесь на творчество и отличное настроение!
-									</h3>
-									<div class="item-privilege__desc">
-										Панорамные виды из окон настолько живописны, что даже художники арендуют наши
-										офисы, чтобы запечатлить их на своих полотнах.
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="main__area area">
-					<div class="area__container container">
-						<div class="area__body">
-							<h2 class="area__title title">Бизнес-пространство на Ваш выбор</h2>
-							<div class="area__intro intro">
-								Уникальное преимущество - вы спокойно работаете, пока мы играем с вашими детьми!
-							</div>
-							<div class="area__cards">
-								<div class="area__card card-area">
-									<div class="card-area__body">
-										<div class="card-area__image">
-											<picture><source srcset="img/main/area/area1.webp" type="image/webp"><img src="img/main/area/area1.jpg" alt="Area 1"></picture>
-										</div>
-										<h3 class="card-area__title">Комфортный кабинет</h3>
-										<div class="card-area__desc">
-											Офис под ключ, осталось только включить компьютер или планшет - все
-											остальное уже в полной готовности.
-										</div>
-										<div class="card-area__price">
-											от <span>10 000</span> грн /
-											<picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
-										</div>
-										<button class="card-area__btn btn_yellow" type="button">Подробней</button>
-									</div>
-								</div>
-								<div class="area__card card-area">
-									<div class="card-area__body">
-										<div class="card-area__image">
-											<picture><source srcset="img/main/area/area2.webp" type="image/webp"><img src="img/main/area/area2.jpg" alt="Area 1"></picture>
-										</div>
-										<h3 class="card-area__title">Коворкинг</h3>
-										<div class="card-area__desc">
-											Нужны новые идеи или просто время подумать - коворкинг лучшее решение!Во
-											время кофебрейка можно познакомиться, обменяться идеями, или просто
-											непринужденно поболтать. Смена обстановки всегда положительно влияет на
-											умственную деятельность.
-										</div>
-										<div class="card-area__price">
-											от <span>10 000</span> грн /
-											<picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
-										</div>
-										<button class="card-area__btn btn_yellow" type="button">Подробней</button>
-									</div>
-								</div>
-								<div class="area__card card-area">
-									<div class="card-area__body">
-										<div class="card-area__image">
-											<picture><source srcset="img/main/area/area3.webp" type="image/webp"><img src="img/main/area/area3.jpg" alt="Area 1"></picture>
-										</div>
-										<h3 class="card-area__title">Конференц-залы</h3>
-										<div class="card-area__desc">
-											Быстрые совещания не теряя драгоценного времени.
-											Масштабируемое количество мест удобные кресла, проектор,
-											Скидка для клиентов!
-											Удобное приложение для бронирования переговорных комнат.
-										</div>
-										<div class="card-area__price">
-											от <span>10 000</span> грн /
-											<picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
-										</div>
-										<button class="card-area__btn btn_yellow" type="button">Подробней</button>
-									</div>
-								</div>
-								<div class="area__card card-area">
-									<div class="card-area__body">
-										<div class="card-area__image">
-											<picture><source srcset="img/main/area/area4.webp" type="image/webp"><img src="img/main/area/area4.jpg" alt="Area 1"></picture>
-										</div>
-										<h3 class="card-area__title">Online офис</h3>
-										<div class="card-area__desc">
-											Принятие входящих звонков или кореспонденции - теперь все это сделают за
-											вас. Не упустите ни одного звонка или важного письма - секретарь всегда
-											оперативно сообщит вам новости.
-										</div>
-										<div class="card-area__price">
-											от <span>10 000</span> грн /
-											<picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
-										</div>
-										<button class="card-area__btn btn_yellow" type="button">Подробней</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="main__opportunity opportunity">
-					<div class="opportunity__container container">
-						<div class="opportunity__body">
-							<h2 class="opportunity__title title">Все возможности в одной стоимости</h2>
-							<div class="opportunity__intro intro">
-								Наличие большого количества инфраструктуры делает Gulliver не просто бизнес-центром с
-								торгово-развлекательной составляющей, а пространством для жизни и эффективного
-								проведения времени, где все продумано до мелочей.
-							</div>
-							<div class="opportunity__slider">
-								<div class="opportunity__wrapper swiper-wrapper">
-									<div class="opportunity__slide swiper-slide">
-										<div class="opportunity__image">
-											<picture><source srcset="img/main/opportunity/opportunity1.webp" type="image/webp"><img src="img/main/opportunity/opportunity1.png" alt="Opportunity 1"></picture>
-										</div>
-										<div class="opportunity__name">150 магазинов различных профилей</div>
-									</div>
-									<div class="opportunity__slide swiper-slide">
-										<div class="opportunity__image">
-											<picture><source srcset="img/main/opportunity/opportunity2.webp" type="image/webp"><img src="img/main/opportunity/opportunity2.png" alt="Opportunity 2"></picture>
-										</div>
-										<div class="opportunity__name">Супермаркет</div>
-									</div>
-									<div class="opportunity__slide swiper-slide">
-										<div class="opportunity__image">
-											<picture><source srcset="img/main/opportunity/opportunity3.webp" type="image/webp"><img src="img/main/opportunity/opportunity3.png" alt="Opportunity 3"></picture>
-										</div>
-										<div class="opportunity__name">Вместительный паркинг</div>
-									</div>
-									<div class="opportunity__slide swiper-slide">
-										<div class="opportunity__image">
-											<picture><source srcset="img/main/opportunity/opportunity4.webp" type="image/webp"><img src="img/main/opportunity/opportunity4.png" alt="Opportunity 4"></picture>
-										</div>
-										<div class="opportunity__name">Салоны-красоты</div>
-									</div>
-									<div class="opportunity__slide swiper-slide">
-										<div class="opportunity__image">
-											<picture><source srcset="img/main/opportunity/opportunity5.webp" type="image/webp"><img src="img/main/opportunity/opportunity5.png" alt="Opportunity 5"></picture>
-										</div>
-										<div class="opportunity__name">Более 15 заведений с разнообразной кухней:</div>
-									</div>
-									<div class="opportunity__slide swiper-slide">
-										<div class="opportunity__image">
-											<picture><source srcset="img/main/opportunity/opportunity6.webp" type="image/webp"><img src="img/main/opportunity/opportunity6.png" alt="Opportunity 6"></picture>
-										</div>
-										<div class="opportunity__name">Более 15 заведений с разнообразной кухней:</div>
-									</div>
-								</div>
-								<div class="opportunity__navigation">
-									<div class="opportunity__prev">
-										<picture><source srcset="img/icons/nav-arrow.webp" type="image/webp"><img src="img/icons/nav-arrow.png" alt="Icon"></picture>
-									</div>
-									<div class="opportunity__next">
-										<picture><source srcset="img/icons/nav-arrow.webp" type="image/webp"><img src="img/icons/nav-arrow.png" alt="Icon"></picture>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="main__best best">
-					<div class="best__container container">
-						<div class="best__body">
-							<h2 class="best__title title">Лучшие офисы для Вашего выбора</h2>
-							<div class="best__tabs tabs" data-tabs="1">
-								<div class="tabs__header">
-									<div class="tabs__item _active" data-tabs="1">Одноместный офис</div>
-									<div class="tabs__item" data-tabs="1">Двухместный офис</div>
-									<div class="tabs__item" data-tabs="1">Трехместный офис</div>
-									<div class="tabs__item" data-tabs="1">Четырехместный офис</div>
-									<div class="tabs__item" data-tabs="1">От пяти и более</div>
-								</div>
-
-								<div class="tabs__body" data-tabs="1">
-									<div class="tabs__block _active" data-tabs="1">
-										<div class="tabs__content">
-											<div class="best__slider">
-												<div class="best__wrapper swiper-wrapper">
-													<div class="best__slide slide-best swiper-slide">
-														<h3 class="slide-best__title">Превосходный офис</h3>
-														<div class="slide-best__body">
-															<div class="slide-best__image">
-																<picture><source srcset="img/main/best/Image1.webp" type="image/webp"><img src="img/main/best/Image1.jpg" alt="Image1"></picture>
-															</div>
-															<div class="slide-best__info">
-																<div class="slide-best__name">
-																	Бизнес-центр «Gulliver», 100 м2, 17 этаж
-																</div>
-																<div class="slide-best__address">
-																	<span>г. Киев, Спортивная пл., 1a</span>
-																	<a href="#" class="slide-best__link">Печерский
-																		район</a>
-																</div>
-																<div class="slide-best__desc">
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																</div>
-																<ul class="slide-best__list">
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Расположение
-																		</div>
-																	</li>
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Количество сотрудников
-																		</div>
-																	</li>
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Интерьер
-																		</div>
-																	</li>
-																</ul>
-																<div class="slide-best__price">
-																	от <span>10 000</span> грн /
-																	<picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
-																</div>
-																<button class="slide-best__btn btn_blue"
-																	type="button">Подробней</button>
-															</div>
-														</div>
-													</div>
-													<div class="best__slide slide-best swiper-slide">
-														<h3 class="slide-best__title">Превосходный офис</h3>
-														<div class="slide-best__body">
-															<div class="slide-best__image">
-																<picture><source srcset="img/main/best/Image1.webp" type="image/webp"><img src="img/main/best/Image1.jpg" alt="Image1"></picture>
-															</div>
-															<div class="slide-best__info">
-																<div class="slide-best__name">
-																	Бизнес-центр «Gulliver», 100 м2, 17 этаж
-																</div>
-																<div class="slide-best__address">
-																	<span>г. Киев, Спортивная пл., 1a</span>
-																	<a href="#" class="slide-best__link">Печерский
-																		район</a>
-																</div>
-																<div class="slide-best__desc">
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																</div>
-																<ul class="slide-best__list">
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Расположение
-																		</div>
-																	</li>
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Количество сотрудников
-																		</div>
-																	</li>
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Интерьер
-																		</div>
-																	</li>
-																</ul>
-																<div class="slide-best__price">
-																	от <span>10 000</span> грн /
-																	<picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
-																</div>
-																<button class="slide-best__btn btn_blue"
-																	type="button">Подробней</button>
-															</div>
-														</div>
-													</div>
-													<div class="best__slide slide-best swiper-slide">
-														<h3 class="slide-best__title">Превосходный офис</h3>
-														<div class="slide-best__body">
-															<div class="slide-best__image">
-																<picture><source srcset="img/main/best/Image1.webp" type="image/webp"><img src="img/main/best/Image1.jpg" alt="Image1"></picture>
-															</div>
-															<div class="slide-best__info">
-																<div class="slide-best__name">
-																	Бизнес-центр «Gulliver», 100 м2, 17 этаж
-																</div>
-																<div class="slide-best__address">
-																	<span>г. Киев, Спортивная пл., 1a</span>
-																	<a href="#" class="slide-best__link">Печерский
-																		район</a>
-																</div>
-																<div class="slide-best__desc">
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																	Полностью меблированное и оснащенное рабочее
-																	пространство, готово к работе в любое время.
-																</div>
-																<ul class="slide-best__list">
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Расположение
-																		</div>
-																	</li>
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Количество сотрудников
-																		</div>
-																	</li>
-																	<li class="slide-best__item">
-																		<div class="slide-best__icon">
-																			<img src="img/icons/building.png"
-																				alt="Icon">
-																		</div>
-																		<div class="slide-best__property">
-																			Интерьер
-																		</div>
-																	</li>
-																</ul>
-																<div class="slide-best__price">
-																	от <span>10 000</span> грн /
-																	<picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
-																</div>
-																<button class="slide-best__btn btn_blue"
-																	type="button">Подробней</button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="best__navigation">
-													<div class="best__prev">
-														<picture><source srcset="img/icons/nav-arrow.webp" type="image/webp"><img src="img/icons/nav-arrow.png" alt="Icon"></picture>
-													</div>
-													<div class="best__next">
-														<picture><source srcset="img/icons/nav-arrow.webp" type="image/webp"><img src="img/icons/nav-arrow.png" alt="Icon"></picture>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="tabs__block" data-tabs="1">
-										<div class="tabs__content">2</div>
-									</div>
-									<div class="tabs__block" data-tabs="1">
-										<div class="tabs__content">3</div>
-									</div>
-									<div class="tabs__block" data-tabs="1">
-										<div class="tabs__content">4</div>
-									</div>
-									<div class="tabs__block" data-tabs="1">
-										<div class="tabs__content">5</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="main__call call">
-					<div class="call__container container">
-						<div class="call__body">
-							<h2 class="call__title">
-								<span>У вас возникли вопросы? Звоните Сейчас!</span>
-								<span>Получите оперативный ответ!</span>
-							</h2>
-							<div class="call__intro">
-								Получите оперативную консультацию от нашего сотрудника, а лучше закажите персональный
-								просмотр и
-								убедитесь лично, в правильности своего выбора.
-							</div>
-							<form action="#" class="call__form">
-								<div class="call__item">
-									<input type="text" placeholder="Ваш контактный номер телефона">
-								</div>
-								<div class="call__item">
-									<button class="call__btn btn_blue" type="button">Позвоните мне</button>
-								</div>
-							</form>
-							<div class="call__outro">
-								Хотите проконсультироваться когда вам будет удобно? Не проблема: телефон нашего
-								менеджера +38
-								095 686 21 21
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="main__personal personal">
-					<div class="personal__bg">
-						<picture><source srcset="img/main/personal_bg.webp" type="image/webp"><img src="img/main/personal_bg.jpg" alt="Background"></picture>
-					</div>
-					<div class="personal__container container">
-						<div class="personal__body">
-							<h2 class="personal__title">
-								<span>Желаете увидеть своими глазами и выбрать?</span>
-								<span>Закажите персональный просмотр!</span>
-							</h2>
-							<div class="personal__desc">
-								Во время просмотра вы сможете увидеть все доступные офисы и выбрать для себя самый
-								комфортный и удобный!
-							</div>
-							<a href="#order" class="personal__btn btn_yellow popup-link" type="button">Заказать
-								просмотр</a>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div> <!-- page -->
-
-		<footer class="footer">
-    <div class="footer__container container">
-        <div class="footer__body">
-            <div class="footer__column">
-                <h3 class="footer__title">Бизнес-центры</h3>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Gulliver
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            IQ
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Horizon Tower
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Horizon Park
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Podil
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Silver Breeze
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__column">
-                <h3 class="footer__title">Предложения</h3>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            ТОП 5 офисов
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Офисы
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Коворкинг
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Конференц-залы
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">
-                            Виртуальный офис
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__column">
-                <h3 class="footer__title">Предложения</h3>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <span>Телефон:</span>
-                        <a href="tel:+380632344334" class="footer__link">
-                            +38 (063) 234 43 34
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <span>e-mail: </span>
-                        <a href="mailto:info@company.com" class="footer__link">
-                            info@company.com
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-		<div class="popup" id="order">
-    <div class="popup__body">
-        <div class="popup__content">
-            <button class="close-popup" type="button">
-                <svg>
-                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
-                </svg>
-            </button>
-            <h2 class="popup__title title">Заказать просмотр офиса</h2>
-            <div class="popup__name">Бизнес-центр «Gulliver», 17 этаж
-            </div>
-            <div class="popup__info">
-                <div class="popup__address">г. Киев, Спортивная пл., 1a</div>
-                <div class="popup__district">Печерский район</div>
-            </div>
-            <form action="#" class="popup__form form-popup">
-                <div class="form-popup__block">
-                    <div class="form-popup__image">
-                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Image"></picture>
-                    </div>
-                    <div class="form-popup__fields">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Ваш телефон">
-                        <input type="text" placeholder="Ваш email">
-                    </div>
-                </div>
-                <textarea placeholder="Укажите Ваши пожелания"></textarea>
-                <a href="#done" class="form-popup__btn btn_blue popup-link" type="submit">Заказать</a>
-            </form>
         </div>
     </div>
 </div>
 
-<div class="popup" id="book">
+<div class="popup popup-confirm" id="post-deleted">
     <div class="popup__body">
         <div class="popup__content">
-            <button class="close-popup" type="button">
+            <a href="" class="close-popup messages__close">
                 <svg>
                     <use xlink: href="img/icons/icons.svg#x-mark"></use>
                 </svg>
-            </button>
-            <h2 class="popup__title title">Забронировать конференц-зал</h2>
-            <div class="popup__name">Бизнес-центр «Gulliver», 17 этаж
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
             </div>
-            <div class="popup__info">
-                <div class="popup__address">г. Киев, Спортивная пл., 1a</div>
-                <div class="popup__district">Печерский район</div>
+            <div class="popup-confirm__text">Публікація була видалена!
             </div>
-            <form action="#" class="popup__form form-popup">
-                <div class="form-popup__block">
-                    <div class="form-popup__image">
-                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Image"></picture>
-                    </div>
-                    <div class="form-popup__fields">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Ваш телефон">
-                        <input type="text" placeholder="Ваш email">
-                        <input type="text" placeholder="Дата">
-                        <input type="text" placeholder="К-во человек (макс:23)">
-                    </div>
-                </div>
-                <textarea placeholder="Укажите Ваши пожелания"></textarea>
-                <a href="#done" class="form-popup__btn btn_blue popup-link" type="submit">Забронировать</a>
-            </form>
         </div>
     </div>
 </div>
 
-<div class="popup" id="done">
+<div class="popup popup-confirm" id="del-canvas-photo">
     <div class="popup__body">
         <div class="popup__content">
-            <button class="close-popup" type="button">
+            <a href="" class="close-popup messages__close">
                 <svg>
                     <use xlink: href="img/icons/icons.svg#x-mark"></use>
                 </svg>
-            </button>
-            <h2 class="popup__title title">Спасибо</h2>
-            <div class="popup__intro intro">
-                Вы заказали просмотр офиса в Бизнес-центре <span>«Gulliver»</span>
+            </a>
+            <h2 class="popup-confirm__title">Видалити фото обкладинки</h2>
+            <div class="popup-confirm__text">Якщо ви видалите це фото профілю буде видалена і публікація з ним.
             </div>
-            <ul class="popup__details">
-                <li class="popup__item">
-                    <span>Адрес бизнес-центра:</span> г. Киев, Спортивная пл., 1a
-                </li>
-                <li class="popup__item">
-                    <span>Район:</span> Печерский
-                </li>
-                <li class="popup__item">
-                    <span>Этаж:</span> 17
-                </li>
-                <li class="popup__item">
-                    <span>Номер офиса:</span> 408
-                </li>
-            </ul>
-            <div class="popup__message">
-                Если у Вас возникнут вопросы, наши менеджеры с радостью Вам помогут
-                тел.: <a href="tel:+380956862121" class="popup__phone">+38 095 686 21 21</a>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-canvas-photo" class="popup-confirm__btn_green popup-link">Видалити</a>
             </div>
-            <button type="button" class="popup__btn btn_blue close-popup">Хорошо</button>
         </div>
     </div>
 </div>
-	</div> <!-- wrapper -->
-	<script src="js/app.min.js?_v=20221119144038"></script>
+
+<div class="popup popup-confirm" id="deleted-canvas-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Фото обкладинки видалено
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-profile-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити фото профілю</h2>
+            <div class="popup-confirm__text">Якщо ви видалите це фото профілю буде видалена і публікація з ним.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-profile-photo" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-profile-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Фото профілю видалено
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити альбом?</h2>
+            <div class="popup-confirm__text">Ви дійсно хочите видалити альбом Допомога? Усі медіафайли із цього
+                альбома
+                будуть також видалені.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-album" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Альбом видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="download-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Завантаження Альбому</h2>
+            <div class="popup-confirm__text">Для завантаження альбому потрібен деякий час. Будь ласка зачекайте.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Завантажити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення фото</h2>
+            <div class="popup-confirm__text">Якщо ви видалите це фото, буде видалена і публікація з ним.
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-photo" class="popup-confirm__btn_green popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-photo">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Фото видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="edit-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Назва альбома</h2>
+            <input type="text" class="popup-confirm__name" value="Допомога">
+            <div class="popup-confirm__btns">
+
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="canvas-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Виберіть зображення для обкладинки альбому</h2>
+
+            <div class="popup-confirm__gallery gallery-popup">
+                <div class="gallery-popup__options radio-options">
+                    <div class="radio-options__item _active">
+                        <picture><source srcset="img/profile/photos/photo1.webp" type="image/webp"><img src="img/profile/photos/photo1.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image1">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo10.webp" type="image/webp"><img src="img/profile/photos/photo10.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image2">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo11.webp" type="image/webp"><img src="img/profile/photos/photo11.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image3">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo12.webp" type="image/webp"><img src="img/profile/photos/photo12.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image4">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo14.webp" type="image/webp"><img src="img/profile/photos/photo14.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image5">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo15.webp" type="image/webp"><img src="img/profile/photos/photo15.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image6">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo1.webp" type="image/webp"><img src="img/profile/photos/photo1.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image7">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo2.webp" type="image/webp"><img src="img/profile/photos/photo2.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image8">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo3.webp" type="image/webp"><img src="img/profile/photos/photo3.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image9">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo4.webp" type="image/webp"><img src="img/profile/photos/photo4.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image10">
+                    </div>
+                    <div class="radio-options__item">
+                        <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
+                        <input type="radio" name="gallery" value="Image11">
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="crop-image">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Обрізати зображення</h2>
+
+            <div class="popup-confirm__crop">
+                <picture><source srcset="img/profile/photos/photo_big.webp" type="image/webp"><img src="img/profile/photos/photo_big.jpg" alt="Image"></picture>
+            </div>
+
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#cropped-image" class="popup-confirm__btn_green popup-link">Продовжити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="cropped-image">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__text">Будь ласка, виберіть необхідну область та підтвердіть
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_green close-popup">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="move-to-album">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Переміщення фото
+                до іншого альбому
+            </h2>
+            <div class="popup-confirm__text">Виберіть інший альбом
+                для цього зображення.
+            </div>
+            <div class="popup-confirm__select select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="help" name="album">
+                        <label for="help">Допомога</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="map" name="album">
+                        <label for="help">Мапа</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="space" name="album">
+                        <label for="help">Космос</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="street" name="album">
+                        <label for="help">Вулиця</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="office" name="album">
+                        <label for="help">Офіс</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Допомога
+                </div>
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#" class="popup-confirm__btn_green popup-link">Зберегти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="task-done">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__image">
+                <img src="img/tasks/Money transfer.svg" alt="Task">
+            </div>
+            <div class="popup-confirm__text">Завдання 6 пройдено!</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="pay">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Поповнити баланс</h2>
+            <div class="popup-confirm__desc">1 одиниця = 50 грн
+            </div>
+            <div class="popup-confirm__form">
+                <input type="text" id="pay-input" value="10">
+                <span>=</span>
+                <div class="popup-confirm__result"><span>500</span> грн</div>
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#pay-done" class="popup-confirm__btn_green popup-confirm__btn_wide popup-link">Поповнити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="pay-done">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#vote"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text popup-confirm__text_pay">Ваш баланс поповнено
+                на 10 одиниць!
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-account">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення акаунту</h2>
+            <div class="popup-confirm__text">Акаунт буде видалено,ви точно цього бажаєте?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-account" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-account">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Акаунт було видалено!</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-group">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення групи</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити группу?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-group" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-group">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Групу було видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалення сторінки</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити сторінку?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#deleted-page" class="popup-confirm__btn_red btn_red popup-link">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="deleted-page">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#basket"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Сторінку було видалено</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="block-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Заблокувати</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                заблокувати цього користувача?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#blocked-user" class="popup-confirm__btn_green popup-link">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="blocked-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#block"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Ви заблокували користувача
+                Ліна Костенко.</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="complane-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Скарга на користувача</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                повідомити про цього користувача?
+            </div>
+            <textarea class="popup-confirm__message" placeholder="Напишіть причину скарги"></textarea>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#complaned-user" class="popup-confirm__btn_green popup-link">Підтвердити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="complaned-user">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <div class="popup-confirm__sign">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#attention"></use>
+                </svg>
+            </div>
+            <div class="popup-confirm__text">Ваша скарга на користувача
+                Ліна Костенко була відправлена!</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-confirm" id="del-friend">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="close-popup messages__close">
+                <svg>
+                    <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                </svg>
+            </a>
+            <h2 class="popup-confirm__title">Видалити
+                Тетяна Куриленко із друзів</h2>
+            <div class="popup-confirm__text">Ви впевнені, що хочете
+                видалити Тетяна Куриленко зі списку друзів?
+            </div>
+            <div class="popup-confirm__btns">
+                <a href="#" class="popup-confirm__btn_white close-popup">Відмінити</a>
+                <a href="#r" class="popup-confirm__btn_green">Видалити</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="viewer" id="viewer">
+    <div class="viewer__wrapper">
+        <div class="viewer__content">
+            <div class="viewer__body">
+
+                <div class="viewer__photo photo-viewer">
+                    <div class="photo-viewer__slider">
+                        <div class="photo-viewer__wrapper swiper-wrapper">
+
+                        </div>
+                        <div class="photo-viewer__navigation">
+                            <div class="photo-viewer__prev">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="photo-viewer__next">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <a href="#" class="photo-viewer__close close-popup">
+                            <svg>
+                                <use xlink: href="img/icons/icons.svg#x-mark"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="viewer__comments comments-viewer">
+                    <div class="comments-viewer__slider">
+                        <div class="comments-viewer__wrapper swiper-wrapper">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div> <!-- wrapper -->
+    <script src="js/app.min.js?_v=20230105155850"></script>
 </body>
 
 </html>
