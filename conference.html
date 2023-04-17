@@ -4,7 +4,7 @@
 <head>
     <title>OfficeStar</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230109123751">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230417214801">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -117,6 +117,18 @@
                     <div class="main-conference__container container">
                         <div class="main-conference__body">
                             <h1 class="main-conference__title">Конференц-залы</h1>
+                        </div>
+                    </div>
+                </section>
+                <section class="conference__breadcrumbs breadcrumbs">
+                    <div class="breadcrumbs__container container">
+                        <div class="breadcrumbs__body">
+                            <a href="/" class="breadcrumbs__link">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#home"></use>
+                                </svg>
+                            </a>
+                            <a href="centers.html" class="breadcrumbs__link">Бизнес-центы</a>
                         </div>
                     </div>
                 </section>
@@ -312,12 +324,12 @@
                                     </div>
                                 </div>
                                 <div class="filter__btns">
-                                    <button class="filter__btn filter__btn_grid" type="button">
+                                    <button class="filter__btn filter__btn_grid active" type="button">
                                         <svg>
                                             <use xlink: href="img/icons/icons.svg#grid"></use>
                                         </svg>
                                     </button>
-                                    <button class="filter__btn filter__btn_list active" type="button">
+                                    <button class="filter__btn filter__btn_list" type="button">
                                         <svg>
                                             <use xlink: href="img/icons/icons.svg#list"></use>
                                         </svg>
@@ -1002,7 +1014,8 @@
                                     <input type="text" placeholder="Ваш контактный номер телефона">
                                 </div>
                                 <div class="call__item">
-                                    <button class="call__btn btn_blue" type="button">Позвоните мне</button>
+                                    <button href="#done" class="call__btn btn_blue popup-link" type="submit">Позвоните
+                                        мне</button>
                                 </div>
                             </form>
                             <div class="call__outro">
@@ -1027,7 +1040,8 @@
                                 Во время просмотра вы сможете увидеть все доступные офисы и выбрать для себя самый
                                 комфортный и удобный!
                             </div>
-                            <button class="personal__btn btn_yellow" type="button">Заказать просмотр</button>
+                            <button href="#order" class="personal__btn btn_yellow popup-link" type="button">Заказать
+                                просмотр</button>
                         </div>
                     </div>
                 </section>
@@ -1225,7 +1239,7 @@
     </div>
 </div>
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20230109123751"></script>
+    <script src="js/app.min.js?_v=20230417214801"></script>
 </body>
 
 </html>

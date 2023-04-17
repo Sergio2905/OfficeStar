@@ -4,7 +4,7 @@
 <head>
     <title>OfficeStar</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230109123751">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230417214801">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -210,7 +210,7 @@
 					<div class="about__container container">
 						<h2 class="about__title">О нас</h2>
 						<div class="about__body">
-							<div class="about__info">
+							<div class="about__info" data-last="btn, before">
 								<div class="about__desc">
 									<span class="bold">Многофункциональный комплекс (МФК) Gulliver</span> — единственный
 									объект на рынке
@@ -229,14 +229,14 @@
 									«А», а это и: качественная.
 								</div>
 							</div>
-							<div class="about__logo">
+							<div class="about__logo" data-first="btn, append">
 								<picture><source srcset="img/Gulliver/logo.webp" type="image/webp"><img src="img/Gulliver/logo.png" alt="Logo"></picture>
+								<a href="offices.html" class="about__btn" data-move="btn, 768">
+									<picture><source srcset="img/icons/read-more.webp" type="image/webp"><img src="img/icons/read-more.png" alt="Icon"></picture>
+									<span>Читать подробнее</span>
+								</a>
 							</div>
 						</div>
-						<button class="about__btn" type="button">
-							<picture><source srcset="img/icons/read-more.webp" type="image/webp"><img src="img/icons/read-more.png" alt="Icon"></picture>
-							<span>Читать подробнее</span>
-						</button>
 					</div>
 				</section>
 				<section class="main__privilege privilege">
@@ -247,7 +247,85 @@
 								Вы получите больше чем обычный офис! Это пространство, обеспечивает ваше удобство и
 								комфорт в работе. Ощущение отдыха, а не тяжелых трудовых будней.
 							</div>
-							<div class="privilege__items">
+							<div class="privilege__slider">
+								<div class="privilege__wrapper swiper-wrapper">
+									<div class="privilege__item item-privilege swiper-slide">
+										<div class="item-privilege__logo">
+											<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
+										</div>
+										<h3 class="item-privilege__title">
+											Всегда больше Всегда лучше!
+										</h3>
+										<div class="item-privilege__desc">
+											Вы получите комфортный, оборудованный под ключ офис с европейским дизайном.
+											А
+											также уникальную систему сервиса, максимально настраиваемую на ваши
+											потребности.
+										</div>
+									</div>
+									<div class="privilege__item item-privilege swiper-slide">
+										<div class="item-privilege__logo">
+											<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
+										</div>
+										<h3 class="item-privilege__title">
+											Связи решают все!
+										</h3>
+										<div class="item-privilege__desc">
+											Теперь у вас идеальные соседи. Окружите себя успешными бизнесменами и даже
+											целыми компаниями. Заводите новые бизнес-знакомства, становитесь еще
+											успешнее.
+										</div>
+									</div>
+									<div class="privilege__item item-privilege swiper-slide">
+										<div class="item-privilege__logo">
+											<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
+										</div>
+										<h3 class="item-privilege__title">
+											Комфортные и успешные переговоры! Наше предложение превзойдет все ожидания!
+										</h3>
+										<div class="item-privilege__desc">
+											Ваши клиенты восхитятся и оценят комфорт и уникальную атмосферу, а
+											превосходный
+											уровень сервиса, подчеркнет вашу любовь к ним.
+										</div>
+									</div>
+									<div class="privilege__item item-privilege swiper-slide">
+										<div class="item-privilege__logo">
+											<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
+										</div>
+										<h3 class="item-privilege__title">
+											Вдохновляйтесь на творчество и отличное настроение!
+										</h3>
+										<div class="item-privilege__desc">
+											Панорамные виды из окон настолько живописны, что даже художники арендуют
+											наши
+											офисы, чтобы запечатлить их на своих полотнах.
+										</div>
+									</div>
+									<div class="privilege__item item-privilege swiper-slide">
+										<div class="item-privilege__logo">
+											<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
+										</div>
+										<h3 class="item-privilege__title">
+											Связи решают все!
+										</h3>
+										<div class="item-privilege__desc">
+											Теперь у вас идеальные соседи. Окружите себя успешными бизнесменами и даже
+											целыми компаниями. Заводите новые бизнес-знакомства, становитесь еще
+											успешнее.
+										</div>
+									</div>
+								</div>
+								<div class="privilege__navigation">
+									<div class="privilege__prev">
+										<picture><source srcset="img/icons/nav-arrow.webp" type="image/webp"><img src="img/icons/nav-arrow.png" alt="Icon"></picture>
+									</div>
+									<div class="privilege__next">
+										<picture><source srcset="img/icons/nav-arrow.webp" type="image/webp"><img src="img/icons/nav-arrow.png" alt="Icon"></picture>
+									</div>
+								</div>
+							</div>
+							<!--<div class="privilege__items">
 								<div class="privilege__item item-privilege">
 									<div class="item-privilege__logo">
 										<picture><source srcset="img/main/previlege1.webp" type="image/webp"><img src="img/main/previlege1.png" alt="Privilege icon"></picture>
@@ -296,7 +374,7 @@
 										офисы, чтобы запечатлить их на своих полотнах.
 									</div>
 								</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</section>
@@ -692,7 +770,7 @@
 									<input type="text" placeholder="Ваш контактный номер телефона">
 								</div>
 								<div class="call__item">
-									<button class="call__btn btn_blue" type="button">Позвоните мне</button>
+									<a href="#done" class="call__btn btn_blue popup-link">Позвоните мне</a>
 								</div>
 							</form>
 							<div class="call__outro">
@@ -916,7 +994,7 @@
     </div>
 </div>
 	</div> <!-- wrapper -->
-	<script src="js/app.min.js?_v=20230109123751"></script>
+	<script src="js/app.min.js?_v=20230417214801"></script>
 </body>
 
 </html>
