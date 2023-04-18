@@ -4,7 +4,7 @@
 <head>
     <title>OfficeStar</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230417214801">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230418224024">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
@@ -14,9 +14,11 @@
     <div class="header__container container">
         <div class="header__body">
 
-            <a href="./" class="header__logo">
-                <picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="Logo"></picture>
-            </a>
+            <div class="header__image">
+                <a href="./" class="header__logo">
+                    <picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="Logo"></picture>
+                </a>
+            </div>
 
             <div class="header__menu menu">
                 <nav class="menu__body">
@@ -97,6 +99,42 @@
                             </ul>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="header__lang lang">
+                <div class="lang__select select-box">
+                    <div class="options-container">
+                        <div class="option">
+                            <input type="radio" class="radio" id="ua" name="lang">
+                            <label for="for id ua">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#ua"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="us" name="lang">
+                            <label for="for id us">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#us"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="ru" name="lang">
+                            <label for="for id ru">
+                                <svg>
+                                    <use xlink: href="img/icons/icons.svg#ru"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="selected">
+                        <svg>
+                            <use xlink: href="img/icons/icons.svg#ua"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
 
@@ -340,7 +378,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -399,7 +461,25 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -451,7 +531,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -505,7 +609,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room4.webp" type="image/webp"><img src="img/offices/rooms/room4.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -559,7 +687,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room5.webp" type="image/webp"><img src="img/offices/rooms/room5.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -627,7 +779,31 @@
                                                 <span>Специальное</span>
                                                 <span>предложение</span>
                                             </div>
-                                            <picture><source srcset="img/offices/rooms/room6.webp" type="image/webp"><img src="img/offices/rooms/room6.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -681,7 +857,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -735,7 +935,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -789,7 +1013,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -843,7 +1091,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room4.webp" type="image/webp"><img src="img/offices/rooms/room4.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -897,7 +1169,31 @@
                                 <div class="rooms__item">
                                     <div class="rooms__part rooms__part_one">
                                         <div class="rooms__image">
-                                            <picture><source srcset="img/offices/rooms/room5.webp" type="image/webp"><img src="img/offices/rooms/room5.jpg" alt="Room"></picture>
+                                            <div class="rooms__slider">
+                                                <div class="rooms__wrapper swiper-wrapper">
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room1.webp" type="image/webp"><img src="img/offices/rooms/room1.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room2.webp" type="image/webp"><img src="img/offices/rooms/room2.jpg" alt="Room"></picture>
+                                                    </div>
+                                                    <div class="rooms__slide swiper-slide">
+                                                        <picture><source srcset="img/offices/rooms/room3.webp" type="image/webp"><img src="img/offices/rooms/room3.jpg" alt="Room"></picture>
+                                                    </div>
+                                                </div>
+                                                <div class="rooms__navigation">
+                                                    <div class="rooms__prev">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rooms__next">
+                                                        <svg>
+                                                            <use xlink: href="img/icons/icons.svg#chevron"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rooms__people">
                                                 <picture><source srcset="img/icons/user.webp" type="image/webp"><img src="img/icons/user.png" alt="Icon"></picture>
                                                 <span>10</span>
@@ -1198,7 +1494,7 @@
     </div>
 </div>
     </div> <!-- wrapper -->
-    <script src="js/app.min.js?_v=20230417214801"></script>
+    <script src="js/app.min.js?_v=20230418224024"></script>
 </body>
 
 </html>
